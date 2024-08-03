@@ -237,12 +237,12 @@ public class BankAtm{
 				if(new_pin==conform_pin){
 						String sql1 = "UPDATE account SET pin = '"+conform_pin+"' WHERE id ='"+id+"'";
 						stat.executeUpdate(sql1);
-						System.out.println("your pin change sucessfully !!");
+						System.out.println("your pin number change sucessfully !!");
 						break;
 					
 				}
 				else{
-					System.out.println("conform password not match ");
+					System.out.println("conform password not match with password");
 					break;
 				}
 		   }
